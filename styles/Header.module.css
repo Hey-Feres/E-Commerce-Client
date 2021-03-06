@@ -1,0 +1,14 @@
+/*
+
+  * StyleSheet *
+
+  - Description: Header styles
+
+*/
+
+.background {
+  background-color: var(--color-primary);
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
