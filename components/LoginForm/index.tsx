@@ -100,7 +100,7 @@ const LoginForm: React.FC<LoginProps> = ({ titlePhrase, buttonPhrase }) => {
                 />
               </InputGroup>
 
-              <Button className="btn btn-info mt-3 w-100">{ buttonPhrase }</Button>
+              <Button type="submit" className="btn btn-info mt-3 w-100">{ buttonPhrase }</Button>
 
               <br/>
 
