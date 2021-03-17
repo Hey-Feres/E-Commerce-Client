@@ -27,13 +27,14 @@ const SignUpForm: React.FC<SignUpProps> = ({ titlePhrase, buttonPhrase }) => {
 
   const dispatch = useDispatch()
 
-  const handleSubmit = async(evt: React.FormEvent):Promise<void> => {
-    evt.preventDefault()
+  const handleSubmit = async(event: React.FormEvent):Promise<void> => {
+    event.preventDefault()
 
     if(password !== passwordConfirmation) {
       toast.error('A senha e a confirmação de senha devem ser iguais!')
       return
     }
+
     try {
       await UsersService.signUp({
         name,
@@ -76,7 +77,7 @@ const SignUpForm: React.FC<SignUpProps> = ({ titlePhrase, buttonPhrase }) => {
                     placeholder="Meu Nome"
                     type="text"
                     value={name}
-                    onChange={ (evt: React.ChangeEvent<HTMLInputElement>) => setName(evt.target.value) }
+                    onChange={ (event: React.ChangeEvent<HTMLInputElement>) => setName(event.target.value) }
                     required
                   />
                 </InputGroup>
@@ -86,7 +87,7 @@ const SignUpForm: React.FC<SignUpProps> = ({ titlePhrase, buttonPhrase }) => {
                     placeholder="Meu e-mail"
                     type="email"
                     value={email}
-                    onChange={ (evt: React.ChangeEvent<HTMLInputElement>) => setEmail(evt.target.value) }
+                    onChange={ (event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value) }
                     required
                   />
                 </InputGroup>
@@ -96,7 +97,7 @@ const SignUpForm: React.FC<SignUpProps> = ({ titlePhrase, buttonPhrase }) => {
                     placeholder="Senha"
                     type="password"
                     value={password}
-                    onChange={ (evt: React.ChangeEvent<HTMLInputElement>) => setPassword(evt.target.value) }
+                    onChange={ (event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value) }
                     required
                   />
                 </InputGroup>
@@ -106,7 +107,7 @@ const SignUpForm: React.FC<SignUpProps> = ({ titlePhrase, buttonPhrase }) => {
                     placeholder="Confirmação de senha"
                     type="password"
                     value={passwordConfirmation}
-                    onChange={ (evt: React.ChangeEvent<HTMLInputElement>) => setPasswordConfirmation(evt.target.value) }
+                    onChange={ (event: React.ChangeEvent<HTMLInputElement>) => setPasswordConfirmation(event.target.value) }
                     required
                   />
                 </InputGroup>
