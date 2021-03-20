@@ -4,7 +4,7 @@
 
 import { useState, useEffect } from 'react'
 import Meta from '../../../dtos/Meta'
-import StyledButton from '../../StyledButton'
+import StyledButton from '../StyledButton'
 import PaginationService from '../../../util/PaginationService'
 
 import { useRouter } from 'next/router'
