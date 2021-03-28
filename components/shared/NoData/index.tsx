@@ -1,7 +1,7 @@
 // Esse componente apenas será utilizado para ser exibido enquanto o fetch nas listagens esta sendo executado, quando não existirem dados cadastrados ou ainda quando uma pesquisa não retorndar dado algum.
 // Ele recebe uma mensagem do tipo string que é opcional, sinta-se livre para utilizá-la nos componentes de listagem.
 
-import styles from '../../../styles/AdminPanel.module.css'
+import styles from './styles.module.css'
 
 interface NoDataProps {
   message?: string

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-import styles from '../../../styles/AdminTitle.module.css'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import TitleAndPath from './TitleAndPath'
 import SearchAndIcon from './SearchAndIcon'
+
+import styles from './styles.module.css'
 
 // Caso seja enviado algum ícone, nosso componente renderizará a aba de pesquisa. Caso não, será renderizado somente o título da página com o caminho.
 
